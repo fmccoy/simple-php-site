@@ -1,0 +1,7 @@
+
+RewriteEngine On
+RewriteBase /Projects/simple-php-site
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /Projects/simple-php-site/index.php [L]
